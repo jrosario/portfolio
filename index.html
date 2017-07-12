@@ -59,9 +59,24 @@
 				<div class="row">
 					<div class="dropdown">
 						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Projects"><i class="fa fa-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
+							<li class="menu-item">
+								<a class="smoothScroll" href="#about" title="About">
+									<i class="fa fa-user"></i>
+									<div class="menu-item-label">About</div>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a class="smoothScroll" href="#work" title="Projects">
+									<i class="fa fa-briefcase"></i>
+									<div class="menu-item-label">Projects</div>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a class="smoothScroll" href="#contact" title="Contact">
+									<i class="fa fa-envelope"></i>
+									<div class="menu-item-label">Contact</div>
+								</a>
+							</li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -97,7 +112,7 @@
 
 					<div class="col-lg-12">
 						<div class="media">
-							<div class="media-body"> Hello! I am originally from Santiago de Cuba, Cuba and currently living in Las Vegas, Nevada. 
+							<div class="media-body"> Hello! I am originally from Santiago de Cuba, Cuba and currently living in Las Vegas, Nevada, but I'm willing to relocate for the right opportunity.
 							<br/><br/>
 							<span>I enjoy developing beautiful, enduring products that customers love, is engaging, and makes organizations more effective.
 							<br/><br/>
@@ -125,6 +140,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h1>Projects</h1>
+					<p class="copy">Sample work of projects I have been involved in.</p>
 				</div>
 
 				<div class="col-lg-4 col-xs-12 project-list-item"> 
@@ -300,28 +316,25 @@
 		<div id="skillswrap">
 			<div class="container">
 				<h1>Build a better user experience.</h1>
-				<p><strong>I'm a developer</strong> with a unique mix of skills. I'm client-focused, honed by years of experience,&nbsp;and I deliver&nbsp;real results, every time.</p>
+				<p class="copy"><strong>I'm a developer</strong> with a unique mix of skills. I'm client-focused, honed by years of experience,&nbsp;and I deliver&nbsp;real results, every time.</p>
 
-<h3>Key Capabilities:</h3>
+				<h3>Key Capabilities:</h3>
 
-	<ul class="related-services col-xs-12">
-		<li>Analytics + Optimization</li>
-		<li>Content Management</li>
-		<li>Interaction Design</li>
-		<li>User-Centered Design</li>
-		<li>Adaptive Design</li>
-		<li>Responsive Design</li>
-		<li>Client-Side Apps</li>
-		<li>Product Management</li>
-		<li>Training &amp; Consulting</li>
-		<li>Mobile Apps</li>
-		<li>Security</li>
-		<li>Prototyping</li>
-	</ul>
-
-			
-					
-				</div>
+				<ul class="related-services col-xs-12">
+					<li>Analytics + Optimization</li>
+					<li>Content Management</li>
+					<li>Interaction Design</li>
+					<li>User-Centered Design</li>
+					<li>Adaptive Design</li>
+					<li>Responsive Design</li>
+					<li>Client-Side Apps</li>
+					<li>Product Management</li>
+					<li>Training &amp; Consulting</li>
+					<li>Mobile Apps</li>
+					<li>Security</li>
+					<li>Prototyping</li>
+				</ul>
+				<!-- </div> -->
 			</div><!--/.container -->
 		</div><!--/ #skillswrap -->
 	</section>
@@ -331,7 +344,8 @@
 	<section  id="clients" name="clients">
 		<div class="container desc">
 
-			<h1>Clients, partners, and friends.</h1><p>&nbsp;I work&nbsp;with a diverse range of companies &mdash; from&nbsp;startups to industry leading names.</p>
+			<h1>Clients, partners, and friends.</h1>
+			<p class="copy">I work with a diverse range of companies &mdash; from&nbsp;startups to industry leading names.</p>
 			<div class="row ">
 				<div class="logos">
 					<div class="col-xs-12 col-md-2 block-col valign-middle grayscale-images">
@@ -365,7 +379,7 @@
 		<div id="footwrap">
 			<div class="container">
 				<h1>Get in touch.</h1>
-				<p><strong>I'd love to chat.</strong> Send me a message and I'll get back to you in one business day.</p>
+				<p class="copy"><strong>I'd love to chat,</strong> so send me a message.</p>
 				<div class="row">
 					<div class="dropdown">
 						<ul id="social" class="nav">
@@ -382,12 +396,24 @@
 
 	<!--COPYRIGHT -->
 	<section id="copyright" name="copyright">	
-		<div id="c">
+		<div id="reserved">
 			<div class="container">
-				<p>Copyright © 2016 All Rights Reserved. | joserosariolopez.com </a></p>
+				<!-- <p>Copyright ©2017 All Rights Reserved. | joserosariolopez.com </p> -->
+				<footer>Copyright © <span id="year"></span> All Rights Reserved. | joserosariolopez.com </footer>
 			</div>
 		</div>
 	</section>
+
+	<script type="text/javascript">
+		var curDate = new Date();
+		var curYear = curDate.getFullYear();
+
+		var yearTag= document.getElementById("year");
+			yearTag.innerHTML = curYear;
+	</script>
+
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
