@@ -458,3 +458,12 @@ h4.image-grid-title {
 p.copy {
 	text-align: center;
 }
+
+
+.modal-dialog {
+	width: 75%;
+}
+
+.modal-content {
+	top: 3em;
+}

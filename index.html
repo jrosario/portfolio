@@ -143,7 +143,7 @@
 					<p class="copy">Sample work of projects I have been involved in.</p>
 				</div>
 
-				<div class="col-lg-4 col-xs-12 project-list-item"> 
+				<div class="col-lg-4 col-xs-12 project-list-item modal-item"> 
 					<img class="img-fluid image-dropshadow" src="assets/img/port01.jpg" />
 					<h4 class="image-grid-title">NOAA API</h4>
 					<!-- <div class="image-grid-link" style="color: #ab8f61; font-size: 0.9rem">
@@ -166,7 +166,7 @@
 					</p>
 				</div> -->
 
-				<div class="col-lg-4 col-xs-12 project-list-item">
+				<div class="col-lg-4 col-xs-12 project-list-item modal-item">
 					<div class="view view-first">  
 						<img class="img-fluid image-dropshadow" src="assets/img/port02.jpg" />
 						<h4 class="image-grid-title">Flightstats API</h4>
@@ -194,7 +194,7 @@
 					</p>
 				</div> -->
 
-				<div class="col-lg-4 col-xs-12 project-list-item">
+				<div class="col-lg-4 col-xs-12 project-list-item modal-item">
 					<img class="img-fluid image-dropshadow" src="assets/img/port03.jpg" />
 					<h4 class="image-grid-title">Twitter - JSON API</h4>
 						<div class="image-grid-link" style="color: #ab8f61; font-size: 0.9rem">
@@ -227,7 +227,7 @@
 
 			<div class="row">
 
-				<div class="col-lg-4 col-xs-12 project-list-item"> 
+				<div class="col-lg-4 col-xs-12 project-list-item modal-item"> 
 					<img class="img-fluid image-dropshadow" src="assets/img/port04.jpg" />
 					<h4 class="image-grid-title">Food and Beverage</h4>
 					<!-- <div class="image-grid-link" style="color: #ab8f61; font-size: 0.9rem">
@@ -349,7 +349,7 @@
 			<div class="row ">
 				<div class="logos">
 					<div class="col-xs-12 col-md-2 block-col valign-middle grayscale-images">
-					 	<div><img class="thumbnail img-fluid " src="assets/img/clients/bally-tech.png" alt="Bally Techonologies" /></div>
+					 	<div><img class="thumbnail img-fluid" src="assets/img/clients/bally-tech.png" alt="Bally Techonologies" /></div>
 					</div>
 
 					<div class="col-xs-12 col-md-2 block-col valign-middle grayscale-images">
@@ -404,12 +404,35 @@
 		</div>
 	</section>
 
-	<script type="text/javascript">
-		var curDate = new Date();
-		var curYear = curDate.getFullYear();
+	<div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">              
+	      <div class="modal-body">
+	      	<button type="button" class="close" data-dismiss="modal">
+	      		<span aria-hidden="true">&times;</span>
+	      		<span class="sr-only">Close</span></button>
+	        <img src="" class="image-preview" style="width: 100%;" >
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-		var yearTag= document.getElementById("year");
-			yearTag.innerHTML = curYear;
+	<script type="text/javascript">
+		$(function() {
+			$('.modal-item').on('click', function() {
+				$('.image-preview').attr('src', $(this).find('img').attr('src'));
+				$('#image-modal').modal('show');   
+			});		
+
+			var curDate = new Date();
+			var curYear = curDate.getFullYear();
+
+			var yearTag= document.getElementById("year");
+				yearTag.innerHTML = curYear;
+
+
+		});
+		
 	</script>
 
 
