@@ -3,7 +3,6 @@ body {
     font-family: "Lato",Arial,sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
-    /*color: #555;*/
     color: #3e3e3e;
 
     -webkit-font-smoothing: antialiased;
@@ -91,7 +90,6 @@ a:after {
     padding: 0;
 }
 
-
 img {
 	margin: 0 auto;
 }
@@ -111,7 +109,7 @@ strong {
 	right: 0;
 	z-index: 10000;
 	overflow: visible;
-	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #section-topbar a {
@@ -119,7 +117,6 @@ strong {
 }
 
 #topbar-inner {
-	/*background: #111;*/
 	background-color: #37474f;
 	line-height: 0;
 	text-align: center;
@@ -136,8 +133,6 @@ strong {
 	margin: 0;
 	padding: 0;
 
-	/*border-right: 1px solid #222;*/
-
 	/* For IE, the outcast */
 	zoom:1;
 	*display: inline;
@@ -149,25 +144,21 @@ strong {
     padding: 0;
 }
 
-
 #section-topbar ul#nav a {
   display: block;
   font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   padding: 18px 20px 18px 20px;
-  /*border-left: 1px solid #222;*/
 }
 
 #section-topbar ul#nav a:hover {
 	background: #546E7A;
 	text-decoration: none;
-	/*border-left: 1px solid #111;*/
 }
 
 #section-topbar ul#nav .active a,
 #section-topbar ul#nav .active a:hover {
 	background: #44bbaa;
-	/*border-left: 1px solid #111;*/
 }
 
 #section-topbar i {
@@ -177,7 +168,6 @@ strong {
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: #37474f;
 }
-
 
 
 /* COLORS: from http://www.sankk.in/material-mixer/#what; */ 
@@ -194,26 +184,12 @@ strong {
 
 /* Header Wrap */
 #headerwrap {
-	/*background: url(../img/header-bg.jpg) no-repeat center top;*/
 	margin-top: 0;
 	padding-top:90px;
 	text-align:center;
-
-	/*background-attachment: relative;*/
-	/*background-position: center center;*/
 	min-height: 300px;
 	width: 100%;
 	background-color: #546E7A;
-	
-    /*-webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
 }
 
 #headerwrap h1 {
@@ -245,7 +221,6 @@ strong {
 	padding-right: 8px;
 	vertical-align: middle;
 }
-
 
 #skillswrap {
 	background: #2c3e50;
@@ -397,7 +372,7 @@ ul#social {
 }
 
 li {
-	list-style: outside none none
+	list-style: outside none none;
 }
 
 ul#social > li {
@@ -467,7 +442,6 @@ h4.image-grid-title {
 	text-align: center;
 	text-transform: uppercase;
 }
-
 
 .menu-item-label {
 	text-transform: uppercase;
